@@ -11,4 +11,5 @@
 - ` php artisan key:generate `
 - ` npm install && npm run dev `
 - `php artisan serve `
+<br/>
 and create two or more user accounts to test the messenger features.. 
