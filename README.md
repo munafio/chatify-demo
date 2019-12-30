@@ -4,11 +4,11 @@
 
 ## Quick Start
 - Clone or download this repo and place it into your server.
-- ```sh composer install ```
-- ```sh cp .env.example .env ```
+- ` composer install `
+- ` cp .env.example .env `
 - Create database and modify .env
-- ```sh php artisan migrate ```
-- ```shphp artisan key:generate ```
-- ```shnpm install && npm run dev ```
-- ```shphp artisan serve ```
+- ` php artisan migrate `
+- ` php artisan key:generate `
+- ` npm install && npm run dev `
+- `php artisan serve `
 and create two or more user accounts to test the messenger features.. 
