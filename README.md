@@ -2,6 +2,9 @@
 
 [Demo] Laravel application for [Chatify Package](https://github.com/munafio/chatify).
 
+## Demo on YouTube
+[Click Here](https://youtu.be/gjo74FUJJPI)
+
 ## Quick Start
 - Clone or download this repo and place it into your server.
 - `composer install `
