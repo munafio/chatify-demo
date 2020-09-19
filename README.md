@@ -15,5 +15,7 @@
 - `npm install && npm run dev `
 - `php artisan storage:link`
 - `php artisan serve `
-<br/>
+
+`Note:` as mentioned in the official docs [here](https://github.com/munafio/chatify#3-publishing-assets), you need to publish the necessary assets.
+<br/><br/>
 and create two or more user accounts to test the messenger features.. 
