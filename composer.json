@@ -14,7 +14,8 @@
         "laravel/framework": "^8.65",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
-        "munafio/chatify": "^1.5"
+        "munafio/chatify": "^1.5",
+        "nao-pon/flysystem-google-drive": "~1.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
