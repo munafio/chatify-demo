@@ -10,8 +10,8 @@
             </td>
             {{-- center side --}}
             <td>
-                <p data-id="{{ Auth::user()->id }}" data-type="user">Saved Messages <span>You</span></p>
-                <span>Save messages secretly</span>
+                <p data-id="{{ Auth::user()->id }}" data-type="user"><span>Мой сейф</span> Сохраненные сообщения</p>
+                <span>Сохраняйте сообщения для себя</span>
             </td>
         </tr>
     </table>
@@ -39,7 +39,7 @@
             {{-- Last Message user indicator --}}
             {!!
                 $lastMessage->from_id == Auth::user()->id
-                ? '<span class="lastMessageIndicator">You :</span>'
+                ? '<span class="lastMessageIndicator">Я:</span>'
                 : ''
             !!}
             {{-- Last message body --}}
@@ -50,7 +50,7 @@
                 : $lastMessage->body
             !!}
             @else
-            <span class="fas fa-file"></span> Attachment
+            <span class="fas fa-file"></span> Вложение
             @endif
         </span>
         {{-- New messages counter --}}

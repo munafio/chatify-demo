@@ -27,7 +27,7 @@
             <p style="margin-left: 5px;">
                 {!! ($message == null && $attachment != null && @$attachment[2] != 'file') ? $attachment[1] : nl2br($message) !!}
                 <sub title="{{ $fullTime }}" class="message-time">
-                    <span class="fas fa-{{ $seen > 0 ? 'check-double' : 'check' }} seen"></span> {{ $time }}</sub>
+                    <span class="fas fa-{{ $seen > 0 ? 'check-double' : 'check' }} seen"></span> {{ $time }}
                 </sub>
                 {{-- If attachment is a file --}}
                 @if(@$attachment[2] == 'file')

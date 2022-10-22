@@ -5,7 +5,7 @@
         {{-- Header and search bar --}}
         <div class="m-header">
             <nav>
-                <a href="#"><i class="fas fa-inbox"></i> <span class="messenger-headTitle">MESSAGES</span> </a>
+                <a href="#"><i class="fas fa-inbox"></i> <span class="messenger-headTitle">Статус подлючения</span> </a>
                 {{-- header buttons --}}
                 <nav class="m-header-right">
                     <a href="#"><i class="fas fa-cog settings-btn"></i></a>
@@ -13,13 +13,13 @@
                 </nav>
             </nav>
             {{-- Search input --}}
-            <input type="text" class="messenger-search" placeholder="Search" />
+            <input type="text" class="messenger-search" placeholder="Поиск..." />
             {{-- Tabs --}}
             <div class="messenger-listView-tabs">
                 <a href="#" @if($type == 'user') class="active-tab" @endif data-view="users">
-                    <span class="far fa-user"></span> People</a>
+                    <span class="far fa-user"></span> Люди</a>
                 <a href="#" @if($type == 'group') class="active-tab" @endif data-view="groups">
-                    <span class="fas fa-users"></span> Groups</a>
+                    <span class="fas fa-users"></span> Группы</a>
             </div>
         </div>
         {{-- tabs and lists --}}
@@ -30,7 +30,7 @@
 
                {{-- Favorites --}}
                <div class="favorites-section">
-                <p class="messenger-title">Favorites</p>
+                <p class="messenger-title">Избранное</p>
                 <div class="messenger-favorites app-scroll-thin"></div>
                </div>
 
@@ -46,16 +46,16 @@
            <div class="@if($type == 'group') show @endif messenger-tab groups-tab app-scroll" data-view="groups">
                 {{-- items --}}
                 <p style="text-align: center;color:grey;margin-top:30px">
-                    <a target="_blank" style="color:{{$messengerColor}};" href="https://chatify.munafio.com/notes#groups-feature">Click here</a> for more info!
+                    <a target="_blank" style="color:{{$messengerColor}};" href="https://chatify.munafio.com/notes#groups-feature">Кликните сюда</a> для получения дополнительной информации!
                 </p>
              </div>
 
              {{-- ---------------- [ Search Tab ] ---------------- --}}
            <div class="messenger-tab search-tab app-scroll" data-view="search">
                 {{-- items --}}
-                <p class="messenger-title">Search</p>
+                <p class="messenger-title">Поиск</p>
                 <div class="search-records">
-                    <p class="message-hint center-el"><span>Type to search..</span></p>
+                    <p class="message-hint center-el"><span>Введите для поиска...</span></p>
                 </div>
              </div>
         </div>
@@ -83,14 +83,14 @@
         </div>
         {{-- Internet connection --}}
         <div class="internet-connection">
-            <span class="ic-connected">Connected</span>
-            <span class="ic-connecting">Connecting...</span>
-            <span class="ic-noInternet">No internet access</span>
+            <span class="ic-connected">Подключено к Интернету</span>
+            <span class="ic-connecting">Подключение...</span>
+            <span class="ic-noInternet">Нет доступа в Интернет</span>
         </div>
         {{-- Messaging area --}}
         <div class="m-body messages-container app-scroll">
             <div class="messages">
-                <p class="message-hint center-el"><span>Please select a chat to start messaging</span></p>
+                <p class="message-hint center-el"><span>Пожалуйста, выберите чат из списка, чтобы начать обмен сообщениями</span></p>
             </div>
             {{-- Typing indicator --}}
             <div class="typing-indicator">
